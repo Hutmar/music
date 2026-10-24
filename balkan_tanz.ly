@@ -3,7 +3,7 @@
 \header {
   title = "Balkan-Tanz"
   composer = "Alexander Jekic"
-  subtitle = "Akkordeon mit zusätzlichem Kontrabass"
+  subtitle = "Arrangement von Reini"
 }
 
 \language "deutsch"
@@ -48,8 +48,11 @@ clarinette = {
 	R1*16
 }
 
-sax = {
-	R1*16
+sax = \relative c {
+	d'4 d d8 e f g | f4 e e2 | g4 g g4.(d8) | e4( d) d2 | \break
+	a'4 a a4( c8 a) | c4 h h2 | f4 d8 e f4 e8 d  | e2. r4 | \break
+	c'4 c c g8 a | h4 h h f8 g | a4 a  a g8 f | c2( a'2) \break
+	e'8 e e e e e e( c) | d d d d d d d( h)	| c8 c g( f) g g d( c) | d2 r2 | \break
 }
 
 global = {
@@ -65,7 +68,8 @@ global = {
       instrumentName = "Akkordeon"
       shortInstrumentName = "Akkordeon"
 	  midiInstrument = #"accordion" 
-	  midiMaximumVolume = #1.0
+	  midiMaximumVolume = #0.8
+	  midiPanPosition = #-0.2
     } <<
       \new Staff {
 	    \global
@@ -80,9 +84,11 @@ global = {
     \new Staff \with {
       instrumentName = "Kontrabass"
 	  shortInstrumentName = "Kontrabass"
-	  midiInstrument = #"contrabass" 
+	  % midiInstrument = #"contrabass" 
+	  midiInstrument = #"acoustic bass"
 	  midiMinimumVolume = #0.8
 	  midiMaximumVolume = #1.0
+	  midiPanPosition = #0.0
     } { 
 		\clef bass
 		\kontrabass 
@@ -91,8 +97,10 @@ global = {
 	\new Staff \with {
       instrumentName = #"Clarinette"
       shortInstrumentName = #"Clarinette"
-	  midiInstrument = "clarinet" 
-      midiPanPosition = #0.0
+	  midiInstrument = #"clarinet" 
+	  midiMinimumVolume = #0.9
+	  midiMinimumVolume = #1.0
+      midiPanPosition = #0.3
     } {
 	
 	\transpose c d {
@@ -105,8 +113,11 @@ global = {
 	\new Staff \with {
       instrumentName = "Sax"
 	  shortInstrumentName = "Sax"
+	  midiInstrument = #"tenor sax" 
+      midiPanPosition = #0.2
     } { 
 		\global
+		\transposition b
 		\sax 
 	}
   >>
