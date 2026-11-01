@@ -38,7 +38,7 @@ akkordeonBass = {
 }
 
 kontrabass = {
-  c8 r8 e8 r8 g,4 c8 d8 | f4 c4 f4 g4  |g,8 r8 d8 r8 g,4 c8 d8 | c4 g4 c4 es4  | \break
+  c8 r8 es8 r8 g,4 c8 d8 | f4 c4 f4 g4  |g,8 r8 d8 r8 g,4 c8 d8 | c4 g4 c4 es4  | \break
   c8 r8 c8 r8 g,4 c8 d8 | f4 c4 f4 g4  |c8 r8 e8 r8 f,4 c8 g,8 | g,4 d4 g4 r4  | \break
   c8 c c c c c es es | f f f f f f as as  |c8 c c c c c es es | g g g g d d d d  | \break
   c8 c c c c c es es | f f f f f f as as  |c8 c c c es es es es | g,4 d c4 r4  | \break
@@ -50,9 +50,9 @@ clarinette = {
 
 sax = \relative c' {
 	f'8 r f r f4( e8 d8) | e2 f4( g4) | g4 g g4(f8 e) | e4( d) \acciaccatura e8 d2 | \break
-	c'8 r c r c( d4 a8) | g4 d \acciaccatura e8 d2 | f8 r e8( d e4) f8( g) | a2. r4 | \break
-	c8 c c c c c b8( a) | b b b b b b a8( g) | a a a a a a g8( f) | e,2( a2) \break
-	e'8 e e e e e e( c) | d d d d d d d( h)	| c8 c g( f) g g f( c) | d2 r2 | \break
+	c'8 r c r c c d a | g4 d d2 | f8 r e8( d e4) f8( g) | a2. r4 | \break
+	c8 c c c c c b8( a) | b b b b b b a8( g) | a a a a a a g8( f) | e2( a2) \break
+	e8 e e e e e e( c) | d d d d d d d( h)	| c8 c g( f) g g f( c) | d2 r2 | \break
 }
 
 global = {
